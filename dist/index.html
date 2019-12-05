@@ -5058,10 +5058,12 @@ License: You must have a valid license purchased only from themeforest(the above
 				}
 
 				window.drawVisualization = function(p) {
-					$('#fname').html(p.fname);
-					$('#lname').html(p.lname);
-					$('#gender').html(p.gender);
-					$('#birthdate').html(p.birthdate);
+					console.log("Hey");
+					console.log(p.fname);
+					$('#fname').text(p.fname);
+					$('#lname').text(p.lname);
+					$('#gender').text(p.gender);
+					$('#birthdate').text(p.birthdate);
 				};
 
 			})(window);
